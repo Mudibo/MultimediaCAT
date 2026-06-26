@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Basic document metadata -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Our Wildlife</title>
+
+    <!-- External stylesheet for presentation only -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Page container used for layout constraints -->
+    <div class="container">
+      <!-- Semantic header area with the page title -->
+      <header class="site-header">
+        <h1>Save Our Wildlife</h1>
+      </header>
+
+      <!-- Main semantic content area -->
+      <main>
+        <!-- Semantic section grouping the media and controls -->
+        <section class="video-section" aria-labelledby="conservation-heading">
+          <h2 id="conservation-heading" class="visually-hidden">
+            Wildlife Conservation Video
+          </h2>
+
+          <!-- Wildlife video with accessibility and caption support -->
+          <video
+            id="wildlifeVideo"
+            controls
+            width="100%"
+            aria-label="Wildlife conservation documentary video"
+          >
+            <source src="wildlife.mp4" type="video/mp4" />
+            <track
+              src="captions.vtt"
+              kind="captions"
+              srclang="en"
+              label="English captions"
+              default
+            />
+            Your browser does not support the video tag.
+          </video>
+
+          <!-- Descriptive conservation message below the video -->
+          <p class="description">
+            Wildlife conservation protects natural habitats, preserves biodiversity,
+            and ensures future generations can experience thriving ecosystems.
+            Every effort to reduce pollution, stop poaching, and safeguard forests
+            and oceans helps keep our planet alive and balanced.
+          </p>
+
+          <!-- Toggle button connected to JavaScript behavior -->
+          <button id="toggleBtn" type="button" aria-controls="wildlifeVideo">
+            Hide Video
+          </button>
+        </section>
+      </main>
+
+      <!-- Semantic footer with supporting text -->
+      <footer class="site-footer">
+        <p>Protect habitats. Respect wildlife. Act today.</p>
+      </footer>
+    </div>
+
+    <!-- External script for behavior only -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
